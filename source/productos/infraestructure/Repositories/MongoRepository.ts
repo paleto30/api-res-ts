@@ -1,4 +1,3 @@
-import { Exceptions, HttpStatus } from "../../application/ErrosClasses";
 import { ProductRepository } from "../../domain/ProductRepository";
 import { Product } from "../../domain/ProductValue";
 import ProductModel from "../models/producto.mogoModel";
@@ -6,7 +5,6 @@ import ProductModel from "../models/producto.mogoModel";
 
 
 export class MongoRepository implements ProductRepository {
-
 
 
     public async create(producto: Product): Promise<Product> {
